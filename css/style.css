@@ -1,0 +1,277 @@
+/* *{
+    outline: 1px dashed black;    
+} */
+
+/* -------------------------Estilo del body------------------------- */
+body{
+    font-family:math;
+    color:darkslategrey;    
+    display: flex;
+    flex-direction:column;
+    
+}
+
+/*-------------------------Estilo de la barra de navegación-------------------------*/
+.navbar{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    padding:15px;
+    background-color:rgb(34, 35, 36);
+    margin:-5px;
+    margin-bottom:10px;
+}
+/*Estilo del logo de la barra de navegacion*/
+.logo a{
+    text-decoration:none;
+    font-size:23px;
+    color:white;
+}
+/*estilo de los links de la barra de navegación*/
+.nav-links{
+    list-style-type:none;
+    display:flex;
+    flex-direction:row;
+    
+}
+/*estilo de las listas de la barra de navegacion*/
+.nav-links li a{
+    font-size:18px;
+    text-decoration:none;
+    margin-right:10px;
+    color:white;
+}
+
+/*estilo del boton especial "cerrar sesión"*/
+.special{
+    background-color:blueviolet;
+    padding:8px;
+    border-radius:5px;
+    
+}
+.special:hover{
+    box-shadow: 0px 4px 20px darkorchid;
+}
+
+
+/*-------------------------Estilo del contenedor de contenedores-------------------------*/
+.containers{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding:30px;
+    padding-bottom:40px;
+    padding-top:20px;
+}
+
+/*estilo del contenedor del perfil*/
+.container-profile{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    margin-top:58px;
+}
+/*Estilo del contenedor de la informacion de perfil*/
+.info-container{
+    /*border:1px solid black;*/
+    display:flex;
+    flex-direction:column;
+    border-top-right-radius:15px;
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    border-bottom-left-radius:15px;
+    margin-top:-72px;
+    margin-bottom:-60px;
+    box-shadow:0px 4px 4px lightgray;
+}
+/*Estilo de la imagen de perfil*/
+.info>img{
+    width: 150px;
+    height: 150px;
+    /*border: 2px solid whitesmoke;*/
+    border-radius: 100%;
+    position:absolute;
+    top:160px;
+    box-shadow:0px 6px 10px black;
+}
+/*Estilo del banner del perfil*/
+.perfil .banner{
+    padding: 60px;
+    background-color: orange;
+    position:relative;
+    top:0px;
+    border-top-right-radius:15px;
+    border-top-left-radius:15px;
+}
+
+/*Estilo de la informacion del perfil*/
+.perfil .info{
+    display: flex;
+    flex-direction:column;
+    margin-left: 20px;
+    margin-top:60px;
+}
+/*Estilo del nombre de perfil*/
+.perfil h1{
+    font-size:35px;
+}
+/*Estilo del subtitulo del perfil */
+.perfil h2{
+    font-size:20px;
+    margin-top:-10px; 
+}
+/*Estilo de los tags debajo del subtitulo*/
+.perfil .tags{
+    margin-top:-5px;
+}
+/*Estilo de la descripción*/
+.perfil .description {
+    margin-top:-10px;
+    padding:20px;
+    max-width:700px;
+    text-align:justify;
+    margin-right:20px;
+}
+/*Estilo del botón de editar perfil*/
+.perfil .edit{
+    font-size:15px;
+    align-self:flex-start;
+    border:none;
+    background:none;
+    border-top-right-radius:5px;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    margin-bottom:15px;
+    color:dodgerblue;
+}
+.edit:hover{
+    cursor:pointer;
+    box-shadow: 0px 0px 4px blue;
+}
+
+/*-------------------------estilo de la seccion de educacion-------------------------*/
+.education{
+    /*border:solid 1px black;*/
+    border-top-right-radius:15px;
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    border-bottom-left-radius:15px;  
+    display:flex;
+    flex-direction:column;
+    padding-left:15px;
+    padding-bottom:5px;
+    position:relative;
+    padding-top:50px;
+    margin-top:80px;
+    box-shadow:0px 4px 4px lightgray;
+}
+/*estilo del subtitulo de educacion*/
+.education h2{
+    font-size:28px;
+    position:absolute;
+    top:10px;
+}
+/*bloque de texto en educacion*/
+.education .bloque{
+    display:block;
+}
+
+/*-------------------------Estilo del contenedor de conexiones-------------------------*/
+.container-connections{
+    display:flex;
+    flex-direction:column;
+    gap:50px;
+    justify-content:flex-start;
+}
+/*Estilo de la sección de solicitudes*/
+.request{
+    /* border: solid 1px black; */
+    border-radius:15px;
+    padding-left:20px;
+    padding-right:20px;
+    box-shadow:0px 4px 4px lightgray;
+    display:flex;
+    flex-direction:column;
+}
+/*estilo de las solicitudes individuales*/
+.req{
+    display:flex;
+    align-items:center;
+    margin-left:50px;
+    gap:10px;
+}
+/*estilo de los botones de las solicitudes*/
+.req button{
+    border-radius:100%;
+    background:none;
+    height:30px;
+    width:30px;
+    font-size:17px;
+    color:darkorchid;
+    border:1px solid;
+    margin-top:-9px;
+    margin-left:2px;
+}
+/*estilo de las imagenes de las solicitudes*/
+.request img{
+    position:absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 6px;
+    border:3px solid darkorchid;
+    margin-right:10px;
+    margin-left:-50px;
+    margin-top:-10px;
+}
+.req button:hover{
+    cursor:pointer;
+}
+/*estilo de los botones de confirmación*/
+.req .confirm:hover{
+    box-shadow: 0px 0px 5px green;
+}
+/*estilo de los botones de rechazo*/
+.req .deny:hover{
+    box-shadow: 0px 0px 5px red;
+}
+
+/*-------------------------Estilo de la sección de conexiones realizadas-------------------------*/
+.connections{
+    /* border:solid 1px black; */
+    border-radius:15px;
+    box-shadow:0px 4px 4px lightgray;
+    position:relative;
+    margin-top:-10px;
+    padding:10px;
+}
+/*estilo de la lista de conexiones*/
+.cons{
+    display:flex;
+    flex-direction:column;
+    list-style-type:none;
+    font-size:20px;
+    gap:40px;
+    padding-left:60px;
+    padding-top:50px;
+    margin-top:10px;
+}
+/*Estilo del texto de las conexiones*/
+.cons p{
+    font-size:28px;
+    position:absolute;
+    top:-20px;
+    left:19px;
+}
+/*estilo de las imagenes de la lista de conexiones*/
+ul img{
+    position:absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border:solid 1px black;
+    margin-right:10px;
+    margin-left:-50px;
+    margin-top:-10px;
+}
